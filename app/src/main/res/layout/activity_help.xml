@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is an XML layout file for the Help screen in the Sensor Ball game -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"> <!-- This is the background of the Help screen -->
+
+    <!-- This TextView displays the title of the Help screen -->
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENSOR BALL"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- This TextView displays the sub-title of the Help screen -->
+    <TextView
+        android:id="@+id/help_title_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help Page"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- This TextView displays the gameplay instructions -->
+    <TextView
+        android:id="@+id/gameplay_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- This TextView displays the title for the section on using the phone's sensor -->
+    <TextView
+        android:id="@+id/sensor_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- This TextView displays instructions for using the phone's sensor -->
+    <TextView
+        android:id="@+id/sensor_info_title_feel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- This LinearLayout contains two buttons: one to return to the home screen, and one to start the game -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF">
+
+        <!-- This button returns the user to the home screen -->
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="HOME PAGE"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- This button starts the game -->
+        <Button
+            android:id="@+id/start_game_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="START GAME"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- End of the Linear Layout -->
+    </LinearLayout>
+<!-- End of the other Linear Layout -->
+</LinearLayout>

@@ -1,0 +1,142 @@
+<!-- The parent layout is a RelativeLayout with a background gradient -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- A TextView to display the player's score -->
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"/>
+
+    <!-- A TextView to display the remaining time of the game -->
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="54dp"
+        android:textStyle="bold"/>
+
+    <!-- A separator line between the score and the game board -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/score_text_view"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF" />
+
+    <!-- An ImageView to display the ball that the player has to move -->
+    <ImageView
+        android:id="@+id/ball_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ball" />
+
+    <!-- A LinearLayout to display the values of the phone's sensors -->
+    <LinearLayout
+        android:id="@+id/sensor_values_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- A TextView to display the accelerometer sensor's values -->
+        <TextView
+            android:id="@+id/accelerometer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+        <!-- A TextView to display the gyroscope sensor's values -->
+        <TextView
+            android:id="@+id/gyroscope_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+        <!-- A TextView to display the magnetometer sensor's values -->
+        <TextView
+            android:id="@+id/magnetometer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+    <!-- End of the Linear Layout -->
+    </LinearLayout>
+
+    <!-- A LinearLayout to display the home and help buttons -->
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/sensor_values_layout">
+
+        <!-- Adds the Home Button -->
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="HOME"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Adds the Help Button -->
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="HELP"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- End of the Linear Layout -->
+    </LinearLayout>
+
+    <!-- Adds a line above the buttons to show play area -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/buttons"
+        android:background="#FFFFFF" />
+
+<!-- End of the Relative Layout -->
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- This is the main application section -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BallGame"
+        tools:targetApi="24">
+
+        <!-- This is the main activity for the application -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="Sensor Ball"
+            android:theme="@style/Theme.BallGame"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- These are the other activities in the application -->
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HelpActivity"></activity>
+
+        <!-- This is the activity displayed when the game is over -->
+        <activity
+            android:name=".FinishActivity"
+            android:label="Game Over" />
+
+    </application>
+
+    <!-- This is a permission required for the app to vibrate the device -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

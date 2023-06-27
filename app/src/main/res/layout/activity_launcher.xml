@@ -1,0 +1,91 @@
+<!-- This is the root layout element for the activity.
+It is a RelativeLayout, which allows child views to be positioned relative to each other. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- This defines a TextView element with ID high_score_text_view.
+    The android:layout_width and android:layout_height attributes set the dimensions of the text view. -->
+    <TextView
+        android:id="@+id/high_score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- This defines a TextView element with ID title_text_view.
+    The android:layout_width and android:layout_height attributes set the dimensions of the text view. -->
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="SENSOR BALL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"/>
+
+    <!-- This is another TextView element that displays some descriptive text for the application.
+    It has similar attributes as the previous TextView. -->
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="A Mobile Applications Project"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <!-- This is a TextView element that displays the copyright information for the application.
+    It has similar attributes as the previous TextView. -->
+    <TextView
+        android:id="@+id/copyright_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="© 2023 Jason Leonard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"/>
+
+    <!-- This is a Button element with ID start_game_button.
+    The android:layout_width and android:layout_height attributes set the size. -->
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="START GAME"
+        android:onClick="startGame"
+        android:layout_below="@id/title_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <!-- This is a Button element with ID help_button.
+    The android:layout_width and android:layout_height attributes set the size. -->
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="HELP PAGE"
+        android:layout_below="@id/start_game_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+<!-- End of the Relative Layout. -->
+</RelativeLayout>
