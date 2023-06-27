@@ -39,13 +39,13 @@ Overall, my Android application is designed to be an engaging and educational ex
 
 ## Home Activity
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/d67b7177-b4e0-4b36-baa2-6a615017b699)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/600feb89-daa9-43d1-959e-d7a1cb78957f)
 
 This class creates a main screen with buttons to start Sensor Ball and access the help page with the high score achieved by the user in previous games also being displayed on this screen. The onCreate() method is called when the activity is created, and it sets the layout for the activity to the activity_launcher.xml file. It also assigns the start game and help buttons to their respective objects, finds the TextView in the layout to display the high score, and loads the previously saved high score from SharedPreferences. The high score TextView is updated with the loaded value. Two onClickListeners are set for the start game button and help button respectively, to launch MainActivity and HelpActivity. The getHighScore() method is a helper method that gets the current high score from SharedPreferences. It is not used in the current code but can be used elsewhere if needed. Overall, this code creates a simple home screen with options to start the game, access the help page, and view the user's highest score achieved in previous games.
 
 ## Main Activity
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/dbd40b33-942a-4bf0-b98f-7f44356d664d)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/4da36c67-b84a-45af-8912-93c980fc3c5a)
 
 This class if the main part of the program itself. It defines the Sensor Ball game, in which the player tilts their device to move a ball on the screen and collects points by moving the ball as fast as they can around the screen. The code imports necessary libraries and classes from the Android framework and sets up several UI elements such as image views, text views, and buttons. The code starts by setting the orientation of the screen to portrait mode, finding, and initializing several UI elements, and obtaining references to the sensors for the accelerometer, magnetometer, and gyroscope. It sets up listeners for these sensors and registers the activity to receive events when the sensors change. The code implements basic physics principles of motion to move the ball based on the device's sensors. The accelerometer, magnetometer, and gyroscope sensors are used to track the device's orientation and acceleration, and these values are used to move the ball on the screen. The x and z positions of the ball are updated based on the acceleration values measured by the accelerometer sensor, while the gyroscope sensor is used to detect the rotation of the device and adjust the orientation of the ball on the screen accordingly.
 
@@ -53,19 +53,19 @@ Next, the code sets up a timer that counts down from 60 seconds and updates a te
 
 ## Finish Activity
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/7539d3c3-4d73-4344-9939-16d2a5e481b4)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/24d99e1f-bb26-4262-838a-e7d881eb9e8e)
 
 The FinishActivity class is used to display the final score of Sensor Ball and allow the user to navigate to the home screen or a help screen. The onCreate() method is called when the activity is first created, it begins by setting the layout for the activity using the setContentView method. Next, it sets up the click listeners for the home and help buttons by finding the corresponding views in the layout using the findViewById method and then creating an intent to start the corresponding activity when the button is clicked. The code then gets the score from the intent extras using the getIntExtra method and finds the TextViews in the layout using findViewById. The score TextView is updated to show the current score, and the high score is loaded from SharedPreferences using getSharedPreferences. If the current score is higher than the previous high score, the high score TextView is updated to show the new high score and the new high score is saved in SharedPreferences using an Editor. Overall, this code is used to display the final score of a ball game and allows the user to navigate to other parts of the application itself.
 
 ## Help Activity
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/6eeff323-47c6-423c-99d8-0e0fd8c592a1)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/cec5263a-f3a9-4b03-a59d-f6b32793452a)
 
 The HelpActivity class is used to display helpful information for the user to read. It contains a method called onCreate() which is overridden. In the onCreate() method, the layout for the activity is set using setContentView(). The method then gets references to various TextViews and sets text to them. The first TextView, gameInfoTextView, contains information about the game's objective and how to play. The second TextView, sensorInfoTextView, explains how the game uses three different sensors to detect the orientation and movement of the phone. The third TextView, sensorInfoTextViewFeel, prompts the user to click the "START GAME" button to begin playing the game. Next, the method gets references to two buttons, homeButton and startGameButton, and sets up onClick listeners for them. When the buttons are clicked, the method creates new intents to start different activities within the application. Clicking the homeButton will start the HomeActivity, while clicking the startGameButton will start the MainActivity. Overall, this code sets up the HelpActivity and provides users with information about the game's objective and how to play, as well as the technical details of how the game works using sensors.
 
 ## UML Class Diagram of Program
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/13c986fe-0a55-4236-b722-977fb339780f)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/1a43b1e6-457d-4b92-a788-1402cc31bd98)
 
 A UML class diagram is a type of diagram in the Unified Modelling Language (UML) that depicts the structure of a system by showing the system's classes, their attributes, methods, and the relationships among objects. It is used to visually represent the various classes, interfaces, and their relationships in a program.
 
@@ -85,7 +85,7 @@ All classes inherit from the Activity class provided by the Android SDK.
 
 ## Flow Chart of Program
 
-![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/1da29d7d-fd8d-480f-a782-d8abecee9d22)
+![image](https://github.com/JSNLeonard/Sensor-Ball-Game/assets/48300764/c915eac3-e245-4bce-8a0a-34a0bf96e888)
 
 A flowchart is a diagrammatic representation of a process that shows the sequence of steps involved in that process. It uses standard symbols and arrows to show the direction of the process flow. Flowcharts are commonly used in software development and other fields to represent the flow of control or data through a system.
 
